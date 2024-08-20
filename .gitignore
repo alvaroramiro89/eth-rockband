@@ -1,0 +1,31 @@
+# Ignore private key files
+*.key
+*.pem
+*.crt
+
+# Ignore environment variable files that may contain secrets
+.env
+.env.local
+.env.*.local
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build output
+dist/
+build/
+
+# Ignore sensitive files and folders
+*.secret
+secrets/
+config/
+*.config.js
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore any specific files containing private keys
+private_keys/

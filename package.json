@@ -1,0 +1,30 @@
+{
+  "name": "eth-transaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:js": "node sendTransaction.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start:ts": "npm run build && node dist/sendTransaction.js",
+    "monitor": "node --experimental-specifier-resolution=node --loader ts-node/esm src/transactions/monitorAccount.ts",
+    "add-member": "node --experimental-specifier-resolution=node --loader ts-node/esm src/RockBand/addMember.ts",
+    "get-members": "node --experimental-specifier-resolution=node --loader ts-node/esm src/RockBand/getMembers.ts",
+    "delete-member": "node --experimental-specifier-resolution=node --loader ts-node/esm src/RockBand/deleteMember.ts",
+    "set-max-members": "node --experimental-specifier-resolution=node --loader ts-node/esm src/RockBand/setMaxMembers.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
